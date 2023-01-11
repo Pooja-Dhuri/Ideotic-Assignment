@@ -1,8 +1,12 @@
 .Navbar_main_div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 50px;
+    background-color: rgb(241, 69, 69);
+    position: sticky;
 }
 /* .Navbar_breed_div{
    font-size: 30px;
@@ -12,3 +16,10 @@
     text-decoration: none;
     cursor: pointer;
 } */
+.Logout_button{
+    padding: 10px 20px 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(239, 251, 111);
+}

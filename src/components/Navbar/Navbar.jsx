@@ -18,8 +18,8 @@ const Navbar = () => {
         </div> */}
 
         {/* logout button */}
-        <div>
-            <button>Logout</button>
+        <div className={style.Logout_button_box}>
+            <button className={style.Logout_button}>Logout</button>
         </div>
     </div>
   )
