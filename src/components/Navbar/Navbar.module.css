@@ -8,6 +8,7 @@
     background-color: rgb(167, 163, 163);
     position: sticky;
     top: 0;
+    /* width: 100%; */
 }
 .Logout_button{
     padding: 10px 20px 10px 20px;
@@ -20,4 +21,21 @@
     font-weight: bold;
 }
 
-/* responsive for mobile  */
+/* media query for tablet  */
+@media only screen and (max-width: 800px) {
+    .Navbar_main_div{
+        width: 100%;
+        padding: 0px;
+    }
+  }
+
+/* media query for mobile */
+@media only screen and (max-width: 500px) {
+    .Navbar_main_div{
+        width: 100%;
+        padding: 5px;
+    }
+    .Logout_button{
+        padding: 5px;
+    }
+  }
