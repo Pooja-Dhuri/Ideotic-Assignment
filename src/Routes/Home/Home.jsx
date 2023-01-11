@@ -32,7 +32,8 @@ const Home = () => {
         {
             array && array.map((ele)=>(
                 <div className={style.Single_breed_div} onClick={handleClick}>
-                    <h1>{ele}</h1>
+                    <h2>{ele}</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1SDbnWMyuxBCqh5YMrgazHLc-7naxdGtalg&usqp=CAU" alt="puppy image" className={style.common_image}/>
                 </div> 
             ))
         }
