@@ -8,14 +8,6 @@
     background-color: rgb(241, 69, 69);
     position: sticky;
 }
-/* .Navbar_breed_div{
-   font-size: 30px;
-} */
-/* .Navbar_detail{
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-} */
 .Logout_button{
     padding: 10px 20px 10px 20px;
     border: none;
@@ -23,3 +15,5 @@
     border-radius: 5px;
     background-color: rgb(239, 251, 111);
 }
+
+/* responsive for mobile  */

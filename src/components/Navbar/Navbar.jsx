@@ -12,11 +12,6 @@ const Navbar = () => {
             <img src="https://www.dogbreedinfo.com/images32/DBICLogoDogBreedInfoCenter3.PNG" alt="logo" /></Link>
         </div>
 
-        {/* list of breed and detail of the breed */}
-        {/* <div className={style.Navbar_breed_div}>
-                <Link to="/detail" className={style.Navbar_detail}>Detail Of Breed</Link>
-        </div> */}
-
         {/* logout button */}
         <div className={style.Logout_button_box}>
             <button className={style.Logout_button}>Logout</button>
