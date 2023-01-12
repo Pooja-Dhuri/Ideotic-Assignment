@@ -1,20 +1,20 @@
 import React, { useContext } from 'react'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthContext';
 import style from './Login.module.css'
 
 const Login = () => {
 
-    const [email,setEmail]=useState("");
-    const [pass,setPass]=useState();
-    const {login}=useContext(AuthContext)
+    const [email1,setEmail]=useState();
+    const [pass1,setPass]=useState();
+    const {login,isAutherized}=useContext(AuthContext)
 
     const handleSubmit=(e)=>{
         e.preventDefault()
         let getemail=JSON.parse(localStorage.getItem("useremail"))
         let getpass=JSON.parse(localStorage.getItem("userpass"))
-        if(getemail===email && getpass===pass){
+        if(getemail===email1 && getpass===pass1){
             alert("login success")
             login()
         }

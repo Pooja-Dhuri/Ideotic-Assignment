@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import style from '../Login/Login.module.css'
 
 const Register = () => {
@@ -9,7 +9,7 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault()
-        console.log(email,pass)
+        // console.log(email,pass)
         localStorage.setItem("useremail",JSON.stringify(email))
         localStorage.setItem("userpass",JSON.stringify(pass))
         navigate("/login")
@@ -38,6 +38,7 @@ const Register = () => {
         <div className={style.submit_button}>
           <input type="submit" />
         </div>
+        <h2>If Already User?<Link to="/login">Login</Link></h2>
       </form>
     </div>
   );
