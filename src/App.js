@@ -7,10 +7,10 @@ import Login from './Routes/Login/Login';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/>
       <AllRoutes/>
-      <Footer/>
-      {/* <Login/> */}
+      <Footer/> */}
+      <Login/>
     </div>
   );
 }
