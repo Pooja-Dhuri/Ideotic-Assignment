@@ -10,8 +10,15 @@ const Register = () => {
   const handleRegister = (e) => {
     e.preventDefault();
     // console.log(email,pass)
-    localStorage.setItem("useremail", JSON.stringify(email));
-    localStorage.setItem("userpass", JSON.stringify(pass));
+    let arr = JSON.parse(localStorage.getItem('useremail')) || []
+    let emailobj={
+      Email:email,
+      password:pass
+    }
+    arr.push(emailobj)
+    
+    localStorage.setItem("useremail", JSON.stringify(arr));
+    // localStorage.setItem("userpass", JSON.stringify(pass));
     navigate("/login");
   };
   return (
